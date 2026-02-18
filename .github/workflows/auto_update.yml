@@ -1,4 +1,4 @@
-name: Auto Update Group A
+name: Auto Update Group B
 
 on:
   schedule:
