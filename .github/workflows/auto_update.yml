@@ -2,8 +2,11 @@ name: Auto Update Group B
 
 on:
   schedule:
-    - cron: '*/30 * * * *' # Runs every 30 minutes
+    - cron: '*/30 * * * *'
   workflow_dispatch:
+
+permissions:
+  contents: write
 
 jobs:
   build:
@@ -19,15 +22,18 @@ jobs:
           python-version: '3.10'
 
       - name: Install Dependencies
-        run: pip install -r requirements.txt
+        run: |
+          pip install requests pytz
 
-      - name: Run Fetcher
-        run: python fetch_group_b.py
+      - name: Run Fetcher Script
+        run: |
+          python fetch_group_b.py   # <-- Yahan 'b' hona chahiye
+          ls -la
 
       - name: Commit and Push
         run: |
           git config --global user.name "DarTeve-Bot"
           git config --global user.email "bot@darteve.in"
-          git add live_matches_A.json
-          git commit -m "Auto-update Group A matches" || echo "No changes"
+          git add live_matches_B.json  # <-- SABSE ZAROORI: Yahan 'B' karein
+          git commit -m "Auto Update Group B" || echo "No changes"
           git push
