@@ -1,5 +1,42 @@
 {
-    "updated_at": "2026-02-19 07:20:34 AM",
-    "total_matches": 0,
-    "matches": []
+    "updated_at": "2026-02-19 07:24:14 AM",
+    "total_matches": 4,
+    "matches": [
+        {
+            "id": "bak-hotstar-1",
+            "title": "Star Sports 1 Hindi (Backup)",
+            "status": "LIVE",
+            "logo": "https://upload.wikimedia.org/wikipedia/commons/b/b8/Star_Sports_1_Hindi_logo.png",
+            "url": "https://prod-sports-eng-Linear-jit-wsp-partner-stats.hotstar.com/hls/ss1hindi/index.m3u8",
+            "platform": "Star Sports",
+            "is_drm": false
+        },
+        {
+            "id": "bak-willow-1",
+            "title": "Willow Cricket HD",
+            "status": "LIVE",
+            "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/6/60/Willow_TV_logo.svg/1200px-Willow_TV_logo.svg.png",
+            "url": "http://tv.digitalview.live:8080/live/willow/willow/1000.m3u8",
+            "platform": "Willow TV",
+            "is_drm": false
+        },
+        {
+            "id": "bak-sky-1",
+            "title": "Sky Sports Cricket",
+            "status": "LIVE",
+            "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/c/c5/Sky_Sports_Cricket_logo.svg/1200px-Sky_Sports_Cricket_logo.svg.png",
+            "url": "http://tv.digitalview.live:8080/live/skycricket/skycricket/1000.m3u8",
+            "platform": "Sky Sports",
+            "is_drm": false
+        },
+        {
+            "id": "bak-astro-1",
+            "title": "Astro Cricket",
+            "status": "LIVE",
+            "logo": "https://upload.wikimedia.org/wikipedia/en/7/7a/Astro_Cricket_Logo.png",
+            "url": "http://tv.digitalview.live:8080/live/astrocrick/astrocrick/1000.m3u8",
+            "platform": "Astro",
+            "is_drm": false
+        }
+    ]
 }
